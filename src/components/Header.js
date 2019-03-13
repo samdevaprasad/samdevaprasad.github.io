@@ -1,13 +1,14 @@
 import React from 'react';
+import Menu, {SubMenu, MenuItem} from 'rc-menu';
 
 class Header extends React.Component {
   render() {
-    return (
-      <nav className="navbar navbar-light">
-        <div className="container">
-        </div>
-      </nav>
-    );
+    return (<Menu>
+      <MenuItem>1</MenuItem>
+      <SubMenu title="2">
+      <MenuItem>2-1</MenuItem>
+      </SubMenu>
+    </Menu>);
   }
 }
 

@@ -22,9 +22,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header
-          appName={this.props.appName}
-          currentUser={this.props.currentUser} />
           <Switch>
           <Route exact path="/" component={Home}/>
           {/* <Route path="/login" component={Login} /> */}
